@@ -1,0 +1,9 @@
+div{
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+span{
+    font-size: 30px;
+    color: blue;
+}

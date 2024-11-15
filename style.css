@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+li{
+    font-size: 20px;
+    margin-left: 50px;
+}
+.page{
+    height: 100vh;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+                         "cont cont cont cont cont cont cont cont cont cont"
+                         "foot foot foot foot foot foot foot foot foot foot";
+}
+h2{
+    grid-area: logo;
+    border-radius: 50%;
+    background-color: burlywood;
+    color:white;
+}
+nav{
+    grid-area: nav;
+    background-color: burlywood;
+}
+section{
+    grid-area: cont;
+    background-color: burlywood;
+}
+pre{
+    margin-top: 100px;
+    font-size: 50px;
+    direction: ltr;
+    text-align: center;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    font-size: 25px;
+    grid-area: foot;
+    background-color: burlywood;
+}
+.follow{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+.sign_in{
+    position: absolute;
+    bottom: 20px;
+    right: 180px;
+}
+.login_in{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
